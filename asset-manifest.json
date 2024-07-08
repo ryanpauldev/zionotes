@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zionotes/static/css/main.9e53078e.css",
+    "main.js": "/zionotes/static/js/main.1ed2b0e9.js",
+    "index.html": "/zionotes/index.html",
+    "main.9e53078e.css.map": "/zionotes/static/css/main.9e53078e.css.map",
+    "main.1ed2b0e9.js.map": "/zionotes/static/js/main.1ed2b0e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e53078e.css",
+    "static/js/main.1ed2b0e9.js"
+  ]
+}
