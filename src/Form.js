@@ -17,16 +17,21 @@ const Form = () => {
   }, [videoUrl]);
 
   const validateUrl = (url) => {
-    const pattern = new RegExp('^(https?:\\/\\/)?(www\\.)?(youtube\\.com|youtu\\.be)\\/.*$', 'i');
-    if (!pattern.test(url)) {
+    try {
+      const pattern = new RegExp('^(https?:\\/\\/)?(www\\.)?(youtube\\.com|youtu\\.be)\\/.*$', 'i');
+      if (!pattern.test(url)) {
+        return false;
+      }
+      const urlObj = new URL(url);
+      const params = new URLSearchParams(urlObj.search);
+      if (urlObj.hostname === 'youtu.be') {
+        return true; // youtu.be short link is valid if it reaches here
+      }
+      return urlObj.hostname === 'www.youtube.com' && params.has('v');
+    } catch (error) {
+      console.error('Invalid URL:', error);
       return false;
     }
-    const urlObj = new URL(url);
-    const params = new URLSearchParams(urlObj.search);
-    if (urlObj.hostname === 'youtu.be') {
-      return true; // youtu.be short link is valid if it reaches here
-    }
-    return urlObj.hostname === 'www.youtube.com' && params.has('v');
   };
 
   const validateEmail = (email) => {
@@ -35,21 +40,28 @@ const Form = () => {
   };
 
   const extractVideoId = (url) => {
-    const urlObj = new URL(url);
-    if (urlObj.hostname === 'youtu.be') {
-      return urlObj.pathname.slice(1);
+    try {
+      const urlObj = new URL(url);
+      if (urlObj.hostname === 'youtu.be') {
+        return urlObj.pathname.slice(1);
+      }
+      const params = new URLSearchParams(urlObj.search);
+      return params.get('v');
+    } catch (error) {
+      console.error('Error extracting video ID:', error);
+      return null;
     }
-    const params = new URLSearchParams(urlObj.search);
-    return params.get('v');
   };
 
   const displayThumbnail = (videoUrl) => {
     const videoId = extractVideoId(videoUrl);
-    const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
-    const thumbnailLink = `https://www.youtube.com/watch?v=${videoId}`;
+    if (videoId) {
+      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`;
+      const thumbnailLink = `https://www.youtube.com/watch?v=${videoId}`;
 
-    setThumbnailUrl(thumbnailUrl);
-    setThumbnailLink(thumbnailLink);
+      setThumbnailUrl(thumbnailUrl);
+      setThumbnailLink(thumbnailLink);
+    }
   };
 
   const removeThumbnail = () => {
@@ -57,17 +69,37 @@ const Form = () => {
     setThumbnailLink('');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateUrl(videoUrl) && validateEmail(email)) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Zionotes Generation Underway',
-        text: 'Check your email in a few minutes to view your personalized Zionotes PDF and video player',
-      });
-      console.log(`YouTube URL: ${videoUrl}`);
-      console.log(`Email: ${email}`);
-      // Perform your submission actions here
+      try {
+        const response = await fetch('http://localhost:5000/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, videoUrl }),
+        });
+
+        if (response.ok) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Zionotes Generation Underway',
+            text: 'Check your email in a few minutes to view your personalized Zionotes PDF and video player',
+          });
+          console.log(`YouTube URL: ${videoUrl}`);
+          console.log(`Email: ${email}`);
+        } else {
+          const errorData = await response.json();
+          throw new Error(errorData.error);
+        }
+      } catch (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: `Failed to send email: ${error.message}`,
+        });
+      }
     } else {
       let errorMessage = '';
 
