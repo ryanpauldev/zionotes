@@ -55,7 +55,6 @@ const Form = () => {
   const removeThumbnail = () => {
     setThumbnailUrl('');
     setThumbnailLink('');
-    setVideoUrl('');
   };
 
   const handleSubmit = (e) => {
