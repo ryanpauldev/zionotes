@@ -1,0 +1,108 @@
+/* Pricing.css */
+
+.pricing-section {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .pricing-section h2 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-section p {
+    font-size: 18px;
+    color: #666666;
+  }
+  
+  .refund-notice {
+    color: #d4a017; /* Yellow color for the refund notice */
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .pricing-card {
+    background-color: #ffffff; /* White background for the cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .pricing-card h3 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .pricing-card p {
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  .price {
+    font-size: 32px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .cta-button:hover {
+    background-color: #005bb5;
+  }
+  
+  .promo-banner {
+    background-color: #d4edda; /* Light green background for the promo */
+    color: #155724; /* Dark green text */
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  ul li {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999999;
+  }
+  

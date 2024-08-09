@@ -1,0 +1,21 @@
+/* App.css */
+main {
+  padding-top: 100px; /* Adjust this value based on the height of your header */
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cta {
+    margin-top: 20px;
+  }
+}
