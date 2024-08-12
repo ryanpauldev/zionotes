@@ -7,13 +7,14 @@ export default function Footer() {
       <div className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-          {/* Top area: Blocks */}
+          {/* 
+          Top area: Blocks 
           <div className="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
 
-            {/* 1st block */}
+            {/* 1st block 
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
-                {/* Logo */}
+                {/* Logo 
                 <Link href="/" className="block" aria-label="Cruip">
                   <img src="/favicon.ico" alt="Logo" className="w-12 h-12" />
                 </Link>
@@ -21,10 +22,10 @@ export default function Footer() {
               <div className="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
             </div>
 
-            {/* 2nd, 3rd and 4th blocks */}
+            {/* 2nd, 3rd and 4th blocks 
             <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
 
-              {/* 2nd block */}
+              {/* 2nd block 
               <div className="text-sm">
                 <h6 className="text-gray-200 font-medium mb-1">Products</h6>
                 <ul>
@@ -40,7 +41,7 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* 3rd block */}
+              {/* 3rd block 
               <div className="text-sm">
                 <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
                 <ul>
@@ -62,7 +63,7 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* 4th block */}
+              {/* 4th block 
               <div className="text-sm">
                 <h6 className="text-gray-200 font-medium mb-1">Company</h6>
                 <ul>
@@ -87,6 +88,7 @@ export default function Footer() {
             </div>
 
           </div>
+          */}
 
           {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
