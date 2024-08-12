@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Zigzag />
       <Features />
       <Testimonials />
-      <Zigzag />
       <Newsletter />
     </>
   )
