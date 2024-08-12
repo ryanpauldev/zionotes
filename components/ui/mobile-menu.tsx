@@ -60,11 +60,26 @@ export default function MobileMenu() {
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
         <ul className="bg-gray-800 px-4 py-2">
+        <li>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLScA5TceacopHwHDgq470klWPWYtnk_ZQln3kcKwvPvuyzXzPw/viewform?usp=sf_link"
+            className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileNavOpen(false)}
+          >
+            Contact Us
+          </Link>
+        </li>
+
+          {/*
           <li>
             <Link href="/signin" className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               Sign in
             </Link>
           </li>
+          */}
+          {/*
           <li>
             <Link
               href="/signup"
@@ -73,6 +88,7 @@ export default function MobileMenu() {
               Sign up
             </Link>
           </li>
+          */}
         </ul>
       </nav>
     </div>

@@ -10,7 +10,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
-              <img src="/favicon.ico" alt="Logo" className="w-12 h-12" />
+              <img src="\fully_corrected_blue_gray_logo.png" alt="Logo" className="w-36 h-18" />
             </Link>
           </div>
 
@@ -20,17 +20,31 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScA5TceacopHwHDgq470klWPWYtnk_ZQln3kcKwvPvuyzXzPw/viewform?usp=sf_link"
+                  className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              {/*
+              <li>
+                <Link
                   href="/signin"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Sign in
                 </Link>
               </li>
+              */}
+              {/*              
               <li>
                 <Link href="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
                   Sign up
                 </Link>
               </li>
+              */}              
             </ul>
           </nav>
 

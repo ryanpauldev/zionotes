@@ -12,8 +12,8 @@ export default function Testimonials() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Don't take our word for it</h2>
-            <p className="text-xl text-gray-400">Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.</p>
+            <h2 className="h2 mb-4">What Customers & Experts Are Saying</h2>
+            <p className="text-xl text-gray-400">ZioNotes has made impacts across the investing, startup, and academic disciplines.</p>
           </div>
 
           {/* Testimonials */}
@@ -29,9 +29,9 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">— ZioNotes does for video, audio, and documents what Google Maps does for navigation… It lets you see the forest and the trees.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                <cite className="text-gray-200 not-italic">Esther Dyson</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.linkedin.com/in/estherdyson/">Investor and Advisor</a>
               </div>
             </div>
 
@@ -45,9 +45,9 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">— Using AI to help solve the accessibility issues of people with vision, hearing, and neurological disabilities is brilliant. ZioNotes solves these problems for new and existing videos opening up a new world of educational, training, and entertainment videos for this audience. I applaud ZioNotes on helping to bridge the digital divide for people with disabilities.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                <cite className="text-gray-200 not-italic">Mahesh Thakur</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.linkedin.com/in/maheshmthakur/">CEO Stealth Startup</a>
               </div>
             </div>
 
@@ -61,9 +61,9 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— Open PRO lets me quickly get the insights I care about so that I can focus on my productive work. I've had Open PRO for about 24 hours now and I honestly don't know how I functioned without it before.</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">— ZioNotes extracts meaning from my raw videos. The students in my AI course see each lecture as if it were a textbook -- with chapters and titles, and it's searchable. There's nothing else like it</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">UX Board</a>
+                <cite className="text-gray-200 not-italic">Graham Morehead</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.linkedin.com/in/grahammorehead/">Professor at Gonzaga University</a>
               </div>
             </div>
 
