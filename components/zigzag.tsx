@@ -3,6 +3,7 @@ import Image from 'next/image'
 import FeatImage01 from '@/public/images/features-03-image-01.png'
 import FeatImage02 from '@/public/images/features-03-image-02.png'
 import FeatImage03 from '@/public/images/features-03-image-03.png'
+import FeatHeaderImage from '@/public/images/features-03-image-00.png'
 
 export default function Zigzag() {
   return (
@@ -14,9 +15,18 @@ export default function Zigzag() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Reach goals that matter</div>
             <h1 className="h2 mb-4">ZioNotes offers solutions</h1>
-            <p className="text-xl text-gray-400">With ZioNotes, users receive detailed video summaries, time-stamped notes highlighting key points, and enhanced video players that feature an actionable table of contents. This makes it easier to navigate and engage with video content efficiently.
-
-</p>
+            <p className="text-xl text-gray-400 mb-4">
+              With ZioNotes, users receive detailed video summaries, time-stamped notes highlighting key points, and enhanced video players that feature an actionable table of contents. This makes it easier to navigate and engage with video content efficiently.
+            </p>
+            <div className="w-full flex justify-center">
+              <Image
+                src={FeatHeaderImage}
+                alt="ZioNotes features"
+                width={1797}
+                height={1513}
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
           </div>
 
           {/* Items */}
