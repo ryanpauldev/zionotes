@@ -16,7 +16,7 @@ export default function Home() {
       <Zigzag />
       <Features />
       <Testimonials />
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   )
 }

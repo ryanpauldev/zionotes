@@ -13,7 +13,7 @@ export default function Zigzag() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Reach goals that matter</div>
+            {/*<div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Reach goals that matter</div>*/}
             <h1 className="h2 mb-4">ZioNotes offers solutions</h1>
             <p className="text-xl text-gray-400 mb-4">
               With ZioNotes, users receive detailed video summaries, time-stamped notes highlighting key points, and enhanced video players that feature an actionable table of contents. This makes it easier to navigate and engage with video content efficiently.
@@ -34,10 +34,6 @@ export default function Zigzag() {
 
             {/* 1st item */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
-              </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
@@ -66,18 +62,21 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
+              {/* Image */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-12 mb-0 md:mb-0 md:order-1 ltr" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
+              </div>
             </div>
 
             {/* 2nd item */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02" />
+              {/* Image for desktop */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-12 mb-0 md:mb-0 rtl hidden md:block" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02 Desktop" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  {/*<div className="font-architects-daughter text-xl text-purple-600 mb-2">More speed. Less spend</div> */}
                   <h3 className="h3 mb-3">Time Stamped Notes</h3>
                   <p className="text-xl text-gray-400 mb-4">Navigate videos with ease using ZioNotes' time-stamped notes, which pinpoint the most critical moments. Each note is carefully curated to help you find exactly what you're looking for, whether it's a specific topic or a crucial statement made in the video.</p>
                   <ul className="text-lg text-gray-400 -mb-2">
@@ -102,14 +101,15 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
+              {/* Image for mobile */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02 Mobile" />
+              </div>
             </div>
+
 
             {/* 3rd item */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
-              </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
@@ -137,6 +137,10 @@ export default function Zigzag() {
                     </li>
                   </ul>
                 </div>
+              </div>
+              {/* Image */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-12 mb-0 md:mb-0 md:order-1 ltr" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
               </div>
             </div>
 
