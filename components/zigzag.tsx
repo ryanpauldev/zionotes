@@ -64,11 +64,23 @@ export default function Zigzag() {
               </div>
               {/* Image for Desktop */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl hidden md:block" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
+                <Image
+                  className="max-w-full mx-auto md:max-w-none h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  src={FeatImage01}
+                  width={540}
+                  height={405}
+                  alt="Features 01"
+                />
               </div>
               {/* Image for mobile */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
+                <Image
+                  className="max-w-full mx-auto md:max-w-none h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  src={FeatImage01}
+                  width={540}
+                  height={405}
+                  alt="Features 01"
+                />
               </div>
             </div>
 
@@ -76,7 +88,13 @@ export default function Zigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image for Desktop */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl hidden md:block" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02" />
+                <Image
+                  className="max-w-full mx-auto md:max-w-none h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  src={FeatImage02}
+                  width={540}
+                  height={405}
+                  alt="Features 02"
+                />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
@@ -107,7 +125,13 @@ export default function Zigzag() {
               </div>
               {/* Image for mobile */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02" />
+                <Image
+                  className="max-w-full mx-auto md:max-w-none h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  src={FeatImage02}
+                  width={540}
+                  height={405}
+                  alt="Features 02"
+                />
               </div>
             </div>
 
@@ -142,13 +166,22 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
-              {/* Image for Desktop */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl hidden md:block" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
-              </div>
+              <Image
+                className="max-w-full mx-auto md:max-w-none h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                src={FeatImage03}
+                width={540}
+                height={405}
+                alt="Features 03"
+              />
               {/* Image for mobile */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
+                <Image
+                  className="max-w-full mx-auto md:max-w-none h-auto rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  src={FeatImage03}
+                  width={540}
+                  height={405}
+                  alt="Features 03"
+                />
               </div>
             </div>
 
