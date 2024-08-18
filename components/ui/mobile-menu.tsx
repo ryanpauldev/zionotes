@@ -62,7 +62,7 @@ export default function MobileMenu() {
         <ul className="bg-gray-800 px-4 py-2">
         <li>
           <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLScA5TceacopHwHDgq470klWPWYtnk_ZQln3kcKwvPvuyzXzPw/viewform?usp=sf_link"
+              href="https://forms.gle/5inKjftaWc3AYC1p9"
             className="flex font-medium w-full text-purple-600 hover:text-gray-200 py-2 justify-center"
             target="_blank"
             rel="noopener noreferrer"
