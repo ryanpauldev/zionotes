@@ -20,7 +20,7 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScA5TceacopHwHDgq470klWPWYtnk_ZQln3kcKwvPvuyzXzPw/viewform?usp=sf_link"
+                  href="https://forms.gle/5inKjftaWc3AYC1p9"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                   target="_blank"
                   rel="noopener noreferrer"
