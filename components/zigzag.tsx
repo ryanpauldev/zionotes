@@ -62,17 +62,21 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-12 mb-0 md:mb-0 md:order-1 ltr" data-aos="fade-up">
+              {/* Image for Desktop */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl hidden md:block" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
+              </div>
+              {/* Image for mobile */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
                 <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage01} width={540} height={405} alt="Features 01" />
               </div>
             </div>
 
             {/* 2nd item */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image for desktop */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-12 mb-0 md:mb-0 rtl hidden md:block" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02 Desktop" />
+              {/* Image for Desktop */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl hidden md:block" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
@@ -103,7 +107,7 @@ export default function Zigzag() {
               </div>
               {/* Image for mobile */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02 Mobile" />
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width={540} height={405} alt="Features 02" />
               </div>
             </div>
 
@@ -138,8 +142,12 @@ export default function Zigzag() {
                   </ul>
                 </div>
               </div>
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-12 mb-0 md:mb-0 md:order-1 ltr" data-aos="fade-up">
+              {/* Image for Desktop */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl hidden md:block" data-aos="fade-up">
+                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
+              </div>
+              {/* Image for mobile */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mt-8 mb-0 md:mb-8 md:mt-0 rtl block md:hidden" data-aos="fade-up">
                 <Image className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage03} width={540} height={405} alt="Features 03" />
               </div>
             </div>
