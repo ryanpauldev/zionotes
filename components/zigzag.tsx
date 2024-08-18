@@ -18,7 +18,7 @@ export default function Zigzag() {
             <p className="text-xl text-gray-400 mb-4">
               With ZioNotes, users receive detailed video summaries, time-stamped notes highlighting key points, and enhanced video players that feature an actionable table of contents. This makes it easier to navigate and engage with video content efficiently.
             </p>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center" data-aos="fade-up">
               <Image
                 src={FeatHeaderImage}
                 alt="ZioNotes features"
